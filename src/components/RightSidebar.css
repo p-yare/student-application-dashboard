@@ -1,0 +1,232 @@
+.right-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+/* Action Buttons */
+.action-btn {
+  font-size: 0.875rem;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.125rem;
+  color: #1F2937;
+}
+
+/* News Bulletin */
+.news-icon {
+  color: #226CF5;
+  flex-shrink: 0;
+}
+
+.news-title {
+  font-size: 1.0625rem;
+  color: #1F2937;
+  line-height: 1.4;
+}
+
+.news-description {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+.news-link {
+  font-size: 0.875rem;
+  color: #226CF5;
+}
+
+.news-pagination {
+  margin-top: 1.5rem;
+}
+
+.news-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  min-width: 8px;
+  background-color: #D1D5DB;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.news-dot.active {
+  background-color: #226CF5;
+}
+
+/* Upcoming Events */
+.event-nav-btn {
+  border: 1px solid #E5E7EB;
+  background: #FFFFFF;
+  color: #6B7280;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.event-title {
+  font-size: 1rem;
+  color: #1F2937;
+}
+
+.event-date {
+  font-size: 0.875rem;
+  color: #6B7280;
+}
+
+.event-time-badge {
+  background: #F3F4F6;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  min-width: 70px;
+}
+
+.event-time-hour {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1F2937;
+  line-height: 1;
+}
+
+.event-time-period {
+  font-size: 0.75rem;
+  color: #9CA3AF;
+  margin-top: 0.125rem;
+}
+
+.event-details {
+  font-size: 0.875rem;
+  color: #6B7280;
+}
+
+.event-detail-icon {
+  color: #9CA3AF;
+}
+
+.event-register-btn {
+  background: #226CF5;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 0.625rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.event-register-btn:hover {
+  background: #1E5ACF;
+}
+
+/* Quick Links */
+.quick-link {
+  transition: all 0.2s ease;
+}
+
+.quick-link-text {
+  font-size: 1rem;
+  color: #226CF5;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.quick-link-icon {
+  color: #9CA3AF;
+}
+
+.quick-link:hover .quick-link-text {
+  color: #1D4ED8;
+}
+
+.quick-link:hover .quick-link-icon {
+  color: #6B7280;
+}
+
+/* Contact Regional Manager */
+.contact-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.contact-name {
+  font-size: 1.125rem;
+  color: #226CF5;
+}
+
+.contact-info {
+  font-size: 0.9375rem;
+  color: #6B7280;
+}
+
+.contact-separator {
+  margin: 0 8px;
+}
+
+.contact-email {
+  font-size: 0.9375rem;
+  color: #1F2937;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .right-sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .sidebar-section {
+    flex: 1;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-sidebar {
+    flex-direction: column;
+  }
+
+  .sidebar-section {
+    min-width: 100%;
+  }
+
+  .event-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-section {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .event-image {
+    height: 120px;
+  }
+
+  .contact-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+

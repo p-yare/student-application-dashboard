@@ -1,0 +1,297 @@
+/* Summary Cards Row */
+.summary-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+  justify-content: flex-start;
+}
+
+/* Card Wrapper */
+.summary-card-wrapper {
+  background: unset;
+}
+
+/* Card Inner Container */
+.summary-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 8.56rem;
+  height: 6.69rem;
+  min-width: 8.56rem;
+  min-height: 6.69rem;
+  max-width: 8.56rem;
+  max-height: 6.69rem;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px rgba(34, 108, 245, 0.06);
+}
+
+/* Card Content (number + label) */
+.summary-card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* Card Number */
+.summary-card-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* Card Label */
+.summary-card-label {
+  font-size: 1rem;
+  color: #6b7a90;
+  margin: 0;
+  margin-top: 0.2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Button Container */
+.summary-card-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Card Button */
+.summary-card-button {
+  width: calc(100% - 1rem);
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border: 1.5px solid #D1D5DB;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.1rem;
+  min-height: 2.1rem;
+  max-height: 2.1rem;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.summary-card-button:hover {
+  background: #F9FAFB;
+  border-color: #9CA3AF;
+}
+
+/* Ensure card is positioned relative for absolute button */
+/* Ensure card is positioned relative for absolute/flex button */
+.summary-card-equal {
+  width: 8.56rem;
+  min-width: 8.56rem;
+  max-width: 8.56rem;
+  height: 6.69rem;
+  min-height: 6.69rem;
+  max-height: 6.69rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 12px rgba(34, 108, 245, 0.06);
+  margin: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  position: relative;
+  flex: 1 1 8.56rem;
+  /* min-width: 140px; */
+  max-width: 100%;
+  padding-top: 1rem;
+}
+@media (max-width: 992px) {
+  .summary-cards-row {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .summary-card-equal {
+    width: 7.5rem;
+    min-width: 7.5rem;
+    max-width: 100%;
+    height: 6rem;
+    min-height: 6rem;
+    flex: 1 1 45%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .summary-cards-row {
+    gap: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .summary-card-equal {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    min-height: 5rem;
+    flex: 1 1 100%;
+    margin-bottom: 0.75rem;
+  }
+}
+.summary-card-body-fix {
+  display: none;
+}
+/* Button flush with bottom, Figma style */
+.summary-card-btn-fix {
+  min-width: 80px;
+  max-width: 120px;
+  border-radius: 8px !important;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin: 0 auto;
+  display: block;
+  left: 0;
+  right: 0;
+  box-shadow: none;
+  background: #F6F8FA !important;
+  color: #226CF5;
+  border: 1.5px solid #D1D5DB !important;
+}
+@media (max-width: 992px) {
+  .summary-card-equal {
+    min-width: 120px;
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 140px;
+  }
+  .summary-card-btn-fix {
+    min-width: 80px;
+    font-size: 0.95rem;
+  }
+}
+/* Center and style summary card content for Figma look */
+.summary-card-body-fix {
+  min-height: 210px;
+  padding: 1.5rem 1rem 1.25rem 1rem !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.summary-card-number-fix {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a2c47;
+  margin: 0;
+  line-height: 1.1;
+}
+.summary-card-label-fix {
+  font-size: 1rem;
+  color: #6b7a90;
+  margin: 0;
+  margin-top: 0.2rem;
+  text-align: center;
+  font-weight: 500;
+}
+.summary-card-btn-fix {
+  width: 100%;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: 12px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.1rem;
+  min-height: 2.1rem;
+  max-height: 2.1rem;
+  border: 1.5px solid #D1D5DB;
+  background: #fff;
+  color: #226CF5;
+  box-shadow: none;
+  padding: 0;
+}
+
+
+.summary-card-btn-bottom-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 0 0 auto;
+  margin-top: 0.5rem;
+  /* margin-bottom: 0.5rem; */
+}
+@media (max-width: 576px) {
+  .summary-card-body-fix {
+    min-height: 160px;
+    padding: 1rem 0.5rem 1rem 0.5rem !important;
+  }
+  .summary-card-btn-fix {
+    min-width: 100px;
+    font-size: 0.95rem;
+  }
+}
+/* Custom background colors for summary cards */
+.summary-card-blue {
+  background: #E8F0FE !important;
+}
+
+.summary-card-green {
+  background: #E8F5E9 !important;
+}
+
+.summary-card-yellow {
+  background: #FFF9E6 !important;
+}
+
+.summary-card-red {
+  background: #FFEBEE !important;
+}
+
+.summary-card-grey {
+  background: #F5F5F5 !important;
+}
+
+/* Custom button styling for summary cards - light blue filled buttons with white text */
+.summary-card-btn {
+  background: #E8F0FE;
+  color: #226CF5;
+  border: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.summary-card-btn:hover {
+  background: #226CF5;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+/* Custom hover effect for summary cards */
+.summary-card-blue:hover,
+.summary-card-green:hover,
+.summary-card-yellow:hover,
+.summary-card-red:hover,
+.summary-card-grey:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.2s;
+}
+
+

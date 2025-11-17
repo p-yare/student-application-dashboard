@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: #F9FAFB;
+  overflow-x: hidden;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #226CF5;
+  outline-offset: 2px;
+}
+
+/* Button reset */
+button {
+  font-family: inherit;
+}
+
+/* Link reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Input reset */
+input,
+select {
+  font-family: inherit;
+}
+
+

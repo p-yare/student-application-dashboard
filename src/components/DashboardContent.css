@@ -1,0 +1,203 @@
+/* Filter Wrapper Widths */
+.filter-wrapper {
+  flex-shrink: 0;
+}
+
+.filter-year {
+  width: 9.875rem;
+}
+
+.filter-date-created {
+  width: 15.8rem;
+}
+
+.filter-intake {
+  width: 15.06rem;
+}
+
+.filter-countries {
+  width: 20.75rem;
+}
+
+.filter-button-wrapper {
+  width: 7.88rem;
+}
+
+.filter-icon {
+  z-index: 10;
+  color: #6B7280;
+}
+
+/* Custom down arrow for selects */
+.select-chevron-fix {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  z-index: 11;
+  display: flex;
+  align-items: center;
+}
+.filter-row-fix {
+  margin-bottom: 0 !important;
+}
+.filter-select-fix {
+  height: 48px;
+  border-radius: 14px;
+  border: 2px solid #D1D5DB;
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: none;
+  transition: border-color 0.2s;
+  min-width: 140px;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.filter-select-fix:focus {
+  border-color: #226CF5;
+  box-shadow: 0 0 0 2px rgba(34, 108, 245, 0.08);
+}
+.filter-btn-fix {
+  height: 48px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  min-width: 120px;
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  .filter-row-fix {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .filter-select-fix, .filter-btn-fix {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+  .filter-wrapper,
+  .filter-year,
+  .filter-date-created,
+  .filter-intake,
+  .filter-countries,
+  .filter-button-wrapper {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+}
+/* Filter row and select fixes for Figma look */
+.filter-row-fix {
+  margin-bottom: 0 !important;
+}
+.filter-select-fix {
+  height: 48px;
+  border-radius: 14px;
+  border: 2px solid #D1D5DB;
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: none;
+  transition: border-color 0.2s;
+}
+.filter-select-fix:focus {
+  border-color: #226CF5;
+  box-shadow: 0 0 0 2px rgba(34, 108, 245, 0.08);
+}
+.filter-btn-fix {
+  height: 48px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.dashboard-content {
+  margin-left: 260px;
+  margin-top: 70px;
+  padding: 30px;
+  min-height: calc(100vh - 70px);
+  background: #F9FAFB;
+  transition: margin-left 0.3s ease, margin-top 0.3s ease;
+}
+
+/* When sidebar is manually collapsed on large screens (>1200px) */
+@media (min-width: 1201px) {
+  .App.sidebar-collapsed .dashboard-content {
+    margin-left: 70px;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 30px;
+  max-width: 100%;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Custom Bootstrap overrides for primary color */
+.btn-primary {
+  background-color: #226CF5;
+  border-color: #226CF5;
+}
+
+.btn-primary:hover {
+  background-color: #1B5ED8;
+  border-color: #1B5ED8;
+}
+
+.btn-outline-primary {
+  color: #226CF5;
+  border-color: #226CF5;
+}
+
+.btn-outline-primary:hover {
+  background-color: #226CF5;
+  border-color: #226CF5;
+  color: #FFFFFF;
+}
+
+/* Custom form select styling for icons */
+.card-body .form-select {
+  border-radius: 8px;
+  border-color: #D1D5DB;
+}
+
+.card-body .form-select:focus {
+  border-color: #226CF5;
+  box-shadow: 0 0 0 0.25rem rgba(34, 108, 245, 0.25);
+}
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .dashboard-content {
+    margin-left: 70px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-content {
+    margin-left: 0;
+    margin-top: 60px !important;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-content {
+    margin-top: 56px !important;
+    padding: 15px;
+  }
+}
+

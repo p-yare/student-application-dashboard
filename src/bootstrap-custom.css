@@ -1,0 +1,71 @@
+/* Bootstrap Custom Theme Overrides */
+:root {
+  --bs-primary: #226CF5;
+  --bs-primary-rgb: 34, 108, 245;
+  --bs-primary-dark: #1B5ED8;
+  --bs-primary-light: #E8F0FE;
+}
+
+/* Override Bootstrap primary color */
+.btn-primary {
+  --bs-btn-bg: #226CF5;
+  --bs-btn-border-color: #226CF5;
+  --bs-btn-hover-bg: #1B5ED8;
+  --bs-btn-hover-border-color: #1B5ED8;
+  --bs-btn-active-bg: #1B5ED8;
+  --bs-btn-active-border-color: #1B5ED8;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #226CF5;
+  --bs-btn-border-color: #226CF5;
+  --bs-btn-hover-bg: #226CF5;
+  --bs-btn-hover-border-color: #226CF5;
+  --bs-btn-active-bg: #226CF5;
+  --bs-btn-active-border-color: #226CF5;
+}
+
+.text-primary {
+  --bs-text-opacity: 1;
+  color: #226CF5 !important;
+}
+
+.bg-primary {
+  background-color: #226CF5 !important;
+}
+
+.border-primary {
+  border-color: #226CF5 !important;
+}
+
+/* Custom card border radius */
+.card {
+  border-radius: 12px;
+  border: none;
+}
+
+/* Custom form select styling */
+.form-select {
+  border-radius: 8px;
+}
+
+.form-select:focus {
+  border-color: #226CF5;
+  box-shadow: 0 0 0 0.25rem rgba(34, 108, 245, 0.25);
+}
+
+/* Pagination active state */
+.page-item.active .page-link {
+  background-color: #226CF5;
+  border-color: #226CF5;
+}
+
+/* Link colors */
+a {
+  color: #226CF5;
+}
+
+a:hover {
+  color: #1B5ED8;
+}
+

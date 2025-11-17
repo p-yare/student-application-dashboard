@@ -1,0 +1,245 @@
+.notification-btn-squarish {
+  border: 2px solid rgba(250, 251, 252, 0.24);
+  border-radius: 10px;
+  background: #226CF5;
+  color: #fff !important;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border 0.2s;
+}
+.notification-btn-squarish:hover {
+  background: #1B54B8;
+}
+.whats-new-link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.dashboard-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #226CF5;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 70px;
+}
+
+.dashboard-header .container-fluid {
+  padding: 0;
+}
+
+/* Desktop Header Styles */
+.header-main {
+  padding: 0 30px;
+  min-height: 70px;
+}
+
+.header-logo {
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.header-search {
+  max-width: 400px;
+  position: relative;
+}
+
+.search-icon-absolute {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9CA3AF;
+  font-size: 18px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.header-search-input {
+  padding-left: 45px;
+  border-radius: 8px;
+  border: none;
+  height: 40px;
+  font-size: 14px;
+}
+
+.header-search-input:focus {
+  box-shadow: 0 0 0 3px rgba(34, 108, 245, 0.1);
+  border-color: #226CF5;
+}
+
+.header-actions {
+  flex-shrink: 0;
+}
+
+.header-profile span {
+  font-size: 14px;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.profile-initials {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=faces') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: transparent;
+  flex-shrink: 0;
+}
+
+.notification-badge-custom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #EF4444;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  border: 2px solid #1E3A5F;
+  transform: translate(25%, -25%);
+}
+
+/* Mobile Header Styles */
+.header-mobile {
+  padding: 0 15px;
+  min-height: 60px;
+}
+
+.header-logo-mobile {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.mobile-menu-btn,
+.mobile-search-toggle {
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu-btn:hover,
+.mobile-search-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.profile-avatar-mobile {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.mobile-search-container {
+  padding: 10px 15px;
+  background: #1E3A5F;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-search-container .header-search-input {
+  width: 100%;
+}
+
+/* Custom cursor pointer utility */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-pointer:hover {
+  opacity: 0.8;
+}
+
+/* Tablet Responsive (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .header-mobile {
+    padding: 0 20px;
+  }
+
+  .header-logo-mobile {
+    font-size: 20px;
+  }
+}
+
+/* Small Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+  .header-mobile {
+    padding: 0 12px;
+    min-height: 56px;
+  }
+
+  .header-logo-mobile {
+    font-size: 16px;
+  }
+
+  .mobile-menu-btn,
+  .mobile-search-toggle {
+    min-width: 36px;
+    height: 36px;
+  }
+
+  .mobile-menu-btn svg,
+  .mobile-search-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .profile-avatar-mobile {
+    width: 32px;
+    height: 32px;
+  }
+
+  .notification-badge-custom {
+    min-width: 16px;
+    height: 16px;
+    font-size: 10px;
+    border-width: 1.5px;
+  }
+}
+
+/* Update dashboard content margin for mobile header */
+@media (max-width: 991px) {
+  .dashboard-content {
+    margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-content {
+    margin-top: 56px !important;
+  }
+}

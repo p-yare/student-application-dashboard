@@ -1,0 +1,412 @@
+/* Custom Bootstrap overrides for Applications Table */
+.card-body .btn-outline-secondary {
+  border-color: #E5E7EB;
+  color: #6B7280;
+}
+
+.card-body .btn-outline-secondary:hover {
+  background-color: #F9FAFB;
+  border-color: #D1D5DB;
+  color: #1F2937;
+}
+
+/* Pagination customization */
+.pagination .page-link {
+  color: #6B7280;
+  border-color: #D1D5DB;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #226CF5;
+  border-color: #226CF5;
+  color: #FFFFFF;
+}
+
+.pagination .page-link:hover {
+  color: #1F2937;
+  background-color: #F3F4F6;
+  border-color: #9CA3AF;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.applications-table thead {
+  background: #F9FAFB;
+  display: table-header-group;
+}
+
+.applications-table thead tr {
+  display: table-row;
+}
+
+.applications-table th.th-ack-no {
+  padding-right: 1.5rem;
+}
+
+.applications-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #E5E7EB;
+  white-space: nowrap;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.applications-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.applications-table th.sortable > span {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.applications-table th.sortable:hover {
+  background: #F3F4F6;
+}
+
+.sort-icons-double {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  vertical-align: middle;
+  margin-left: 4px;
+  line-height: 0.8;
+  height: 14px;
+}
+
+.sort-icon {
+  font-size: 11px;
+  transition: color 0.2s;
+  display: block;
+  line-height: 0.6;
+  margin: -1px 0;
+  color: #9CA3AF;
+}
+
+.sort-icon.active {
+  color: #226CF5;
+  font-size: 13px;
+}
+
+.sort-icon.inactive {
+  color: #9CA3AF;
+  opacity: 0.7;
+}
+
+.applications-table tbody tr {
+  border-bottom: 1px solid #E5E7EB;
+  transition: background 0.2s;
+}
+
+.applications-table tbody tr:hover {
+  background: #F9FAFB;
+}
+
+.applications-table tbody tr:nth-child(even) {
+  background: #FAFAFA;
+}
+
+.applications-table tbody tr:nth-child(even):hover {
+  background: #F3F4F6;
+}
+
+.applications-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #1F2937;
+  vertical-align: top;
+}
+
+.ack-link {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ack-link:hover {
+  color: #1B5ED8;
+  text-decoration: underline;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.student-name {
+  font-weight: 500;
+  color: #1F2937;
+}
+
+.student-email {
+  font-size: 12px;
+  color: #6B7280;
+}
+
+.text-truncate {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pending-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pending-time {
+  font-weight: 500;
+  color: #1F2937;
+}
+
+.pending-date {
+  font-size: 12px;
+  color: #6B7280;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #6B7280;
+  transition: all 0.2s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #F3F4F6;
+  border-color: #9CA3AF;
+  color: #1F2937;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-page {
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.pagination-page:hover {
+  background: #F3F4F6;
+  border-color: #9CA3AF;
+}
+
+.pagination-page.active {
+  background: #226CF5;
+  border-color: #226CF5;
+  color: #FFFFFF;
+}
+
+/* Override Bootstrap pagination to match Figma design */
+.pagination .page-link {
+  background: transparent;
+  border: 1px solid #E5E7EB;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9CA3AF;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0 8px;
+  transition: all 0.2s;
+  box-shadow: none;
+}
+
+.pagination .page-link:hover {
+  background: #F9FAFB;
+  border-color: #D1D5DB;
+  color: #6B7280;
+}
+
+/* Arrow buttons (prev/next) - first and last child */
+.pagination .page-item:first-child .page-link,
+.pagination .page-item:last-child .page-link {
+  background: transparent;
+  border: none;
+  color: #9CA3AF;
+  font-size: 18px;
+}
+
+.pagination .page-item:first-child .page-link:hover,
+.pagination .page-item:last-child .page-link:hover {
+  background: transparent;
+  color: #6B7280;
+}
+
+.pagination .page-item.disabled:first-child .page-link,
+.pagination .page-item.disabled:last-child .page-link {
+  background: transparent;
+  border: none;
+  color: #E5E7EB;
+  opacity: 0.6;
+}
+
+/* Active page - white background with shadow */
+.pagination .page-item.active .page-link {
+  background: #FFFFFF;
+  border-color: #E5E7EB;
+  color: #111827;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+  z-index: 1;
+}
+
+/* Tabs: pill buttons for Applications table - Figma accurate */
+.applications-table-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.applications-table-tab {
+  border: 2px solid transparent;
+  background: transparent;
+  color: #3B3B3B;
+  border-radius: 4px;
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  min-width: auto;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.applications-table-tab:hover {
+  background: #F3F4F6;
+  border-color: #D1D5DB;
+}
+
+.applications-table-tab.active {
+  background: #EBF2FF;
+  color: #226CF5;
+  border-color: #226CF5;
+  box-shadow: none;
+  font-weight: 600;
+}
+
+.applications-table-tab:focus-visible {
+  border-color: #226CF5;
+  box-shadow: 0 0 0 3px rgba(34,108,245,0.15);
+}
+
+@media (max-width: 900px) {
+  .applications-table-tabs { gap: 0.75rem; margin-bottom: 1.25rem; }
+  .applications-table-tab { font-size: 1rem; padding: 0.65rem 1.5rem; }
+}
+
+@media (max-width: 600px) {
+  .applications-table-tabs { gap: 0.5rem; margin-bottom: 1rem; }
+  .applications-table-tab { font-size: 0.95rem; padding: 0.55rem 1.2rem; min-width: auto; }
+}
+
+/* Header label + sort icon alignment */
+.applications-table th .th-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .applications-table-container {
+    padding: 15px;
+  }
+
+  .table-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab-button {
+    white-space: nowrap;
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  .table-wrapper {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .applications-table {
+    min-width: 800px;
+  }
+
+  .applications-table th,
+  .applications-table td {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .text-truncate {
+    max-width: 150px;
+  }
+}
+
+
