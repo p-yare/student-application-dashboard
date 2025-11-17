@@ -1,5 +1,8 @@
 # Course Finder AI Dashboard
 
+🔗 **Live Demo:** https://student-application-tracker-five.vercel.app/  
+📦 **GitHub Repo:** https://github.com/p-yare/student-application-dashboard
+
 A production-ready, pixel-perfect React dashboard implementation meticulously crafted to match the Figma design specifications. This comprehensive dashboard provides an intuitive interface for managing international student applications, tracking visa processes, payments, and accessing educational resources.
 
 ## 🎯 Project Overview
@@ -503,14 +506,6 @@ npm test
 4. Test thoroughly
 5. Submit a pull request
 
-## License
-
-This project is created for educational and assignment purposes.
-
-## Support
-
-For issues or questions, please contact the development team or create an issue in the repository.
-
 ## 📝 Development Notes
 
 ### Design Decisions
@@ -537,14 +532,6 @@ For issues or questions, please contact the development team or create an issue 
 - **Figma Design**: Reference for all visual specifications
 - **BOOTSTRAP_USAGE.md**: Bootstrap customization documentation
 - **Component Comments**: Each component has inline documentation
-
-## 🙏 Acknowledgments
-
-- **Design**: Figma design specifications provided for Course Finder AI
-- **Icons**: React Icons library (Feather Icons, Heroicons)
-- **Framework**: React 19.2.0 with modern Hooks
-- **Styling**: Bootstrap 5.3.8 + Custom CSS
-- **Images**: Unsplash for placeholder images
 
 ## 👨‍💻 Development Information
 
